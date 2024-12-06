@@ -1,34 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.container {
-    width: 80%;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-h1 {
+    font-family: 'Arial', 'sans-serif';
+    background: linear-gradient(135deg, #6e7dff, #84f6b3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180vh;
     color: #333;
 }
 
-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
+.container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    animation: fadeIn 1s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+
+h3{
+    text-align: center;
+}
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+input[type="file"] {
+    padding: 14px;
+    font-size: 16px;
+    color: #555;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input[type="file"]:hover {
+    border-color: #6e7dff;
+    background-color: #f0f8ff;
+}
+.Download{
+    display: none;
+
+
+}
+.button , .Download{
+    padding: 14px 20px;
+    background: linear-gradient(135deg, #6e7dff, #84f6b3);
     color: white;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, background 0.3s ease;
+
 }
 
-button:hover {
-    background-color: #45a049;
+.button:hover {
+    background: linear-gradient(135deg, #5a6bfe, #63ba87);
+    transform: translateY(-5px);
 }
+#result img{
 
-#result img {
     margin-top: 20px;
     max-width: 100%;
     max-height: 400px;
 }
+#result {
+    margin-top: 2rem;
+    font-size: 18px;
+    color: #333;
+}
+
+#result.success {
+    color: green;
+    font-weight: 600;
+}
+
+#result.error {
+    color: red;
+    font-weight: 600;
+}
+
+/* Animation for container */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

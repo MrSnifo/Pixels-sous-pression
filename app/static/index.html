@@ -7,16 +7,59 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Upload Image</h1>
-    <form id="uploadForm" enctype="multipart/form-data">
-        <input type="file" id="image" name="image" accept="image/*" required>
-        <button type="submit">Upload</button>
-    </form>
 
-    <div id="result"></div>
+    <div class="c1">
+    <div class="container" >
+
+        <div >
+        <h1>Compress Image</h1>
+
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="image" name="image" accept="image/*" required>
+            <button class="button"type="submit">Upload</button>
+
+        </form>
+
+        <div id="result"></div>
+
+        <button class="button Download" >Download</button>
+
     </div>
+
+</div>
+
+<div class="container">
+    <h3>Technical Documentation</h3>
+    <br>
+    <p>This application is built using FastAPI, chosen for its speed and efficiency in handling API requests. It uses Jinja2 for rendering dynamic HTML templates and serves static files like CSS and JavaScript for an interactive user experience.</p>
+    <br>
+    <h4>Overview</h4>
+
+    <p>
+        URL: /upload/<br>
+        Method: POST<br>
+        Input: An image file (e.g., PNG, JPEG).<br>
+        Output: Compressed WebP image.
+    </p>
+    <br>
+    <h4>Key Features</h4>
+    <p>
+        Validation: Ensures the uploaded file is an image, else returns a 400 Bad Request.<br>
+        Compression: Converts the image to WebP format with high quality and near-lossless compression.<br><br>
+        <h5>Responses:</h5>
+        200 OK: Returns the compressed WebP image.<br>
+        400 Bad Request: If the file is not an image.<br>
+        500 Internal Server Error: If processing fails.</p>
+    <br>
+    <h4>Dependencies</h4>
+    <p>
+        Pillow: For image processing.<br>
+        FastAPI: For API routing and response handling.</p>
+</div>
+    </div>
+
+
+
     <script src="/static/script.js"></script>
 </body>
 </html>
-
