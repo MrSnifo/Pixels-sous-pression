@@ -29,32 +29,31 @@
 </div>
 
 <div class="container">
-    <h3>Technical Documentation</h3>
+    <h3>Overview</h3>
     <br>
-    <p>This application is built using FastAPI, chosen for its speed and efficiency in handling API requests. It uses Jinja2 for rendering dynamic HTML templates and serves static files like CSS and JavaScript for an interactive user experience.</p>
+    <p>Optimized image processing for web apps, converting uploads to WebP with customizable compression</p>
     <br>
-    <h4>Overview</h4>
-
+    <h4>API Details</h4>
     <p>
-        URL: /upload/<br>
-        Method: POST<br>
-        Input: An image file (e.g., PNG, JPEG).<br>
-        Output: Compressed WebP image.
+        <strong>Endpoint:</strong> /upload/<br>
+        <strong>Method:</strong> POST<br>
+        <strong>Input:</strong> Image file (PNG, JPEG)<br>
+        <strong>Output:</strong> Compressed WebP image
     </p>
     <br>
-    <h4>Key Features</h4>
-    <p>
-        Validation: Ensures the uploaded file is an image, else returns a 400 Bad Request.<br>
-        Compression: Converts the image to WebP format with high quality and near-lossless compression.<br><br>
-        <h5>Responses:</h5>
-        200 OK: Returns the compressed WebP image.<br>
-        400 Bad Request: If the file is not an image.<br>
-        500 Internal Server Error: If processing fails.</p>
+    <h4>Features</h4>
     <br>
-    <h4>Dependencies</h4>
-    <p>
-        Pillow: For image processing.<br>
-        FastAPI: For API routing and response handling.</p>
+    <ul>
+        <li>Ensures the uploaded file is an image. Returns a 400 error if it's not.</li>
+        <li>Converts the image to WebP format with minimal quality loss and efficient compression.</li>
+    </ul>
+    <br>
+    <h4>Required Libraries</h4>
+    <br>
+    <ul>
+        <li>Pillow For image conversion</li>
+        <li>FastAPI For handling the API requests</li>
+    </ul>
 </div>
     </div>
 
