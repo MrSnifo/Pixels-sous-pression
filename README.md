@@ -1,27 +1,32 @@
-# Pixels-sous-pression
-Optimized image loading for web apps using advanced compression algorithms, improving performance and user experience. Includes documentation on algorithms and performance gains.
+# Pixels-sous-pression  
+Optimized image loading for web apps using advanced compression algorithms, enhancing performance and user experience. Developed for the *La Nuit de l'Info Challenge 2024*. Includes detailed documentation on the algorithms and performance improvements.
 
 ![screenshot](images/overview.png)
 
-# Setup
-Create python virtual enviroment and activate it
+## Setup
+1. Create a Python virtual environment and activate it:
 
-```bash
-python -m venv venv
-```
-Activate it (Linux and MacOS)
+   ```bash
+   python -m venv venv
+   ```
 
-```bash
-source venv/bin/activate
-```
+2. Activate the environment (Linux/MacOS):
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   source venv/bin/activate
+   ```
 
-# Usage
-```bash
-fastapi run app/server.py
-```
+3. Install dependencies:
 
-Click to upload and image then watch it be compressed with minimal loss
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+1. Run the FastAPI server:
+
+   ```bash
+   fastapi run app/server.py
+   ```
+
+2. Upload an image and watch it be compressed with minimal loss, optimizing performance.
