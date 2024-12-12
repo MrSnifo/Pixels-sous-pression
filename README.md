@@ -1,5 +1,5 @@
 # Pixels-sous-pression  
-Optimized image loading for web apps using advanced compression algorithms, enhancing performance and user experience. Developed for the *La Nuit de l'Info Challenge 2024*. Includes detailed documentation on the algorithms and performance improvements.
+Optimized image loading for web apps by converting images to WebP using Pillow, enhancing performance and user experience. Developed for the La Nuit de l'Info Challenge 2024
 
 ![screenshot](images/overview.png)
 
